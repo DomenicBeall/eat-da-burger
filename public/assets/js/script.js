@@ -1,0 +1,1 @@
+// Get the button click events from each tab and send a fetch to the server to update the entry
