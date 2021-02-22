@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    font-family: sans-serif;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    height: 90%;
+}
+
+header {
+    width: 100%; 
+    text-align: center; 
+    background-color: rgb(47, 82, 148); 
+    color: white;
+    height: 10%;
+    line-height: 100px;
+} 
+
+.column {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    height: 100px;
+    line-height: 100px;
+    color: rgb(47, 82, 148);
+}
+
+li:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+}
+
+li:nth-child(odd) {
+    background-color: rgb(231, 231, 231);
+}
