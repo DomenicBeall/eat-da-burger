@@ -1,23 +1,30 @@
 <header>
-        <h1>Eat Da Burger</h1>
-    </header>
+    <h1>Eat Da Burger</h1>
+</header>
 
-	<main>
-        <div class="column">
-            <ul class="eat-col">
-                <li><h1>To Eat</h1></li>
-                {{#each uneatenBurgers}}
-                <li><b>{{ burger_name }}</b> - <button type="button" data-id="{{ id }}">Eat</button></li>
-                {{/each}}
-            </ul>
-        </div>
+<header>
+    <form class="form-inline">
+        <input type="text" placeholder="Burger name" id="burger_name">
+        <button type="button" id="addBtn">Add Burger</button>
+    </form>
+</header>
 
-        <div class="column">
-            <ul class="eaten-col">
-                <li><h1>Eaten</h1></li>
-                {{#each eatenBurgers}}
-                <li><b>{{ burger_name }}</b></li>
-                {{/each}}
-            </ul>
-        </div>
-    </main>
+<main>
+    <div class="column">
+        <ul class="eat-col">
+            <li><h1>To Eat</h1></li>
+            {{#each uneatenBurgers}}
+            <li><b>{{ burger_name }}</b> - <button type="button" class="eatBtn" data-id="{{ id }}">Eat</button></li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="column">
+        <ul class="eaten-col">
+            <li><h1>Eaten</h1></li>
+            {{#each eatenBurgers}}
+            <li><b>{{ burger_name }}</b></li>
+            {{/each}}
+        </ul>
+    </div>
+</main>
