@@ -30,6 +30,20 @@ app.get('/', (req, res) => {
     });    
 });
 
+app.post('/api/eat/:id', (req, res) => {
+    burger.eatBurger(req.params.id, (response) => {
+        console.log("Burger with id: " + req.params.id + " eaten succesfully.");
+        res.send("Successfully deleted burger");
+    });
+});
+
+app.post('/api/add', (req, res) => {
+    burger.addBurger(req.body.name, (response) => {
+        console.log("Burger with id: " + req.params.id + " eaten succesfully.");
+        res.send("Successfully added burger");
+    });
+});
+
 app.listen(port, () => {
   console.log(`Server is listening at ${port}`)
 });
