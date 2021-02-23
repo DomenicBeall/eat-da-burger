@@ -20,7 +20,7 @@ header {
     text-align: center; 
     background-color: rgb(47, 82, 148); 
     color: white;
-    height: 10%;
+    height: 100px;
     line-height: 100px;
 } 
 
@@ -46,4 +46,25 @@ li:nth-child(even) {
 
 li:nth-child(odd) {
     background-color: rgb(231, 231, 231);
+}
+
+.form-inline {
+    display: inline-block;
+    height: 100%;
+}
+
+.form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+.form-inline button {
+    padding: 10px 20px;
+    background-color: rgb(60, 103, 184);
+    border: 1px solid #ddd;
+    color: white;
 }
