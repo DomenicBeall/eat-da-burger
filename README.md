@@ -7,4 +7,4 @@ This web app uses a MySQL Database to store burgers that the user wants to eat a
 The application is deployed on Heroku at: <a href="https://intense-stream-16931.herokuapp.com/">https://intense-stream-16931.herokuapp.com/</a>
 
 ## Screenshots
-<img src="./public/assets/img/screenshot.PNG">
+<img src="./public/assets/img/Screenshot.PNG">
