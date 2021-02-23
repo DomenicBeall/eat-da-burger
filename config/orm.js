@@ -9,7 +9,7 @@ const orm = {
         });
     },
     insertOne(table, col, value, callback) {
-        connection.query(`INSERT INTO ${table} (${col}) VALUES (${value})`, (error, results) => {
+        connection.query(`INSERT INTO ${table} (${col}) VALUES ("${value}")`, (error, results) => {
             if (error) throw error;
 
             callback(results);
