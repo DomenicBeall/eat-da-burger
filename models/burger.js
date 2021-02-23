@@ -7,12 +7,12 @@ const burger = {
         });
     },
     addBurger(burger_name, callback) {
-        orm.insertOne("burger", "burger_name", burger_name, (result) => {
+        orm.insertOne("burgers", "burger_name", burger_name, (result) => {
             callback(result);
         });
     },
     eatBurger(id, callback) {
-        orm.updateOne("burger", "devoured", "1", id, (result) => {
+        orm.updateOne("burgers", "devoured", "1", id, (result) => {
             callback(result);
         });
     }
